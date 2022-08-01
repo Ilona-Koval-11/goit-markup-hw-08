@@ -1,0 +1,63 @@
+/* section-one*/
+.hero-section {
+    padding: 200px 0;
+    text-align: center;
+    background-color: var(--dark-background-color);
+
+    max-width: 1600px;
+    height: 600px;
+    outline: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:
+        linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url('../images/icons/hero-bgk-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+&__container {
+
+        padding: 0 15px;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__title {
+        color: var(--minor-color);
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        width: 696px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        color: var(--minor-color);
+        background-color: var(--secondary-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        letter-spacing: 0.06em;
+        padding-left: 32px;
+        padding-top: 10px;
+        padding-right: 32px;
+        padding-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        transition-property: fill, backgroud-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: none;
+    }
+}
