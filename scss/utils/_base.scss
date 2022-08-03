@@ -8,15 +8,19 @@
       letter-spacing: 0.03em;
   }
 
+  body.modal-open{
+    overflow: hidden;
+  }
+
   .section {
       padding-top: 94px;
       padding-bottom: 94px;
   }
 
-  .container {
+ /* .container {
 
       padding: 0 15px;
       width: 1200px;
       margin-left: auto;
       margin-right: auto;
-  }
+  }*/

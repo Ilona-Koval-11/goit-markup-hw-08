@@ -19,6 +19,22 @@
 
         <nav class="header__nav">
             <a class="header__logo" href=""> <span class="header__logo--blue">Web</span><span class="header__logo--black">Studio</span> </a>
+            <button type="button" 
+            class="header__button is-open" 
+            aria-expanded="false"
+            aria-controls="header__button--dropped-down-menu"
+            data-menu-button>
+<svg width="19" height="19" aria-label="перемикач мобільного меню">
+<use class="header__button--iconed-cross" href="./images/icons/symbol-defs0108.svg#icon-close_24px" ></use>
+<use class="header__button--iconed-open" href="./images/icons/symbol-defs0108.svg#icon-menu_24px" ></use>
+</svg>
+
+            </button>
+
+            <div class="header__button--dropped-down-menu is-open" id="header__button--dropped-down-menu" data-menu>          
+<!--випадаюче вікно-->
+     
+            </div>
             <ul class="header__menu">
 
                 <li class="   header__item">
@@ -36,8 +52,7 @@
     <div class="header__item">
         <a  href="">Контакти</a>
     </div>
-                    
-                </li>
+            </li>
             </ul>
         </nav>
 
@@ -578,7 +593,10 @@
 
     </div>
 </div>
-        
+     
+<script src="./js/drop-menu.js"></script>
+
+
     <script src="./js/modal.js"></script>
 
     <script>

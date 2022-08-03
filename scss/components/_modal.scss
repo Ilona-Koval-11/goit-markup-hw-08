@@ -11,6 +11,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     transform: scale(1);
     transition: opacity 250ms, visibility 250ms;
+    overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -110,7 +111,14 @@ textarea {
     display: flex;
     margin-bottom: 10px;
     flex-direction: column;
-
+@media screen  and (min-width:609px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    width: 100%;
+}
 }
 
 .modal__form--field {
