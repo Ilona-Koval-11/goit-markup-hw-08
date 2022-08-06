@@ -65,22 +65,24 @@
     </div>
 
     <div class="header__mobile-menu--dropped">
-<nav class="header__nav--buttoned">
+<nav class="header__nav--buttoned is-hidden" data-mobile-menu>
             <button 
             type="button" 
             class="header__button is-open" 
             aria-expanded="false"
             aria-controls="header__button--dropped-down-menu"
+    
             data-menu-button>
 <svg width="19" height="19" aria-label="перемикач мобільного меню">
-<use class="header__button--iconed-cross" href="./images/icons/symbol-defs0108.svg#icon-close_24px" ></use>
-<use class="header__button--iconed-open" href="./images/icons/symbol-defs0108.svg#icon-menu_24px" ></use>
+<use class="header__button--iconed-cross" href="./images/icons/symbol-defs0108.svg#icon-close_24px" data-mobile-menu-close></use>
+<use class="header__button--iconed-open"  href="./images/icons/symbol-defs0108.svg#icon-menu_24px" data-mobile-menu-open></use>
 </svg>
 
             </button>
         </nav>
 
-            <div class="header__button--dropped-down-menu is-open" id="header__button--dropped-down-menu" data-menu>
+            <div class="header__button--dropped-down-menu is-open" id="header__button--dropped-down-menu" 
+            data-menu>
 <nav class="header__nav header__mobile-menu">
            
                 <ul class="header__menu header__menu-mobile--dropped">
@@ -109,16 +111,14 @@
                 <li class="header__contacts header__contacts-tablet header__contacts-mobile--phoned">
                     <a class="header__contact" href="tel:+380961111111"> <svg class="header__contact--iconed" width="10"
                             height="16">
-                            <use href="./images/icons/sprite-defs.svg#icon-smartphone">
-                            </use>
+                            
                         </svg> +38 096 111 11 11</a>
                 </li>
                 <li class="header__contacts header__contacts-tablet header__contacts-mobile--mailed">
         
                     <a class="header__contact" href="mailto:info@devstudio.com"> <svg class="header__contact--iconed" width="16"
                             height="12">
-                            <use href="./images/icons/sprite-defs.svg#icon-envelopehover">
-                            </use>
+                            
                         </svg> info@devstudio.com
                     </a>
         
@@ -139,58 +139,7 @@
     </div>
         
     </div>
- <!--               <div class="header__button--dropped-down-menu is-open" id="header__button--dropped-down-menu" data-menu>          
-<div class="open-window">
-    <nav class="header__nav nav">
-            <ul class="header__menu">
-
-                <li class="   header__item">
-                    <div class="header__item--current header__item--blue">
-                     <a href="">Студія</a>   
-                    </div>
-                    
-                </li>
-                <li class="header__link   header__item">
-                    <div class="header__item">
-                       <a  href="./portfolio.html">Портфоліо</a> 
-                    </div>
-                  </li>
-<li class="header__link header__item">
-    <div class="header__item">
-        <a  href="">Контакти</a>
-    </div>
-            </li>
-            </ul>
-        </nav>
-
-        <ul class=" header__menu  contacts">
-            <li class="header__contacts">
-
-                <a class="header__contact mail" href="mailto:info@devstudio.com"> <svg class="header__contact--iconed" width="16" height="12">
-                        <use href="./images/icons/sprite-defs.svg#icon-envelopehover">
-                        </use>
-                    </svg> info@devstudio.com
-                </a>
-
-
-            </li>
-            <li class="header__contacts">
-                <a class="header__contact tel" href="tel:+380961111111"> <svg class="header__contact--iconed" width="10" height="16">
-                        <use href="./images/icons/sprite-defs.svg#icon-smartphone">
-                        </use>
-                    </svg> +38 096 111 11 11</a>
-            </li>
-        </ul>
-        <ul class=" header__menu social">
-            <li class="header__item">Instagram</li>
-            <li class="header__item">Twitter</li>
-            <li class="header__item">Facebook</li>
-            <li class="header__item">LinkedIn</li>
-        </ul>
-</div>
-  </div> 
-        </nav>-->
-
+ 
 </header>
         <main>
             
@@ -631,7 +580,7 @@ srcset="./images/Myh/Myh-270.jpg 1x,
             <div class="footer__network footer__network-mobile ">
                 <div class="footer__network--conected footer__network--signed">
                     <label for="email">
-                        <input class="footer__network--emailed" type="email" name="email" id="email"
+                        <input class="footer__network--emailed footer__network--emailed-mobile" type="email" name="email" id="email"
                             placeholder="E-mail.com">
 
                     </label>
@@ -729,7 +678,7 @@ srcset="./images/Myh/Myh-270.jpg 1x,
                     </svg>
                 </div>
 
-                <label  for="policy">
+                <label class="checkbox-policy"  for="policy">
                     Згідний з розсилкою і приймаю <a class="checkbox--current" href="">Умови конфіденційності</a>
                 </label>
             </div>

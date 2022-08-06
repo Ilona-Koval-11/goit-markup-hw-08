@@ -170,7 +170,10 @@
  
      
      .overlay-section__shadow {
-         display: block;
+         /*display: block;*/
+         display: flex;
+         flex-direction: column;
+         height: 100%;
          box-shadow: none;
          transition-property: box-shadow;
          transition-duration: 250ms;
@@ -316,6 +319,7 @@
      .overlay-section__project--depicted {
          position: relative;
          overflow: hidden;
+         flex-grow: 1;
      }
 
      .overlay-section__project:hover .overlay-section__project--informed {

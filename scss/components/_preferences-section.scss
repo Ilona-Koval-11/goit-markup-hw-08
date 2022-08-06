@@ -27,6 +27,7 @@
      &__menu {
          list-style: none;
          font-weight: 500;
+         
 
         @media screen and (min-width:768px) {
            display: flex; 
@@ -81,6 +82,10 @@
  .preferences-section__menu--itemed {
      margin-right: 30px;
      width: 270px;
+     max-height: 224px;
+     margin-bottom: 150px;
+    
+     
      text-align: center;
      padding-top: 20px;
      padding-bottom: 20px;
@@ -100,7 +105,7 @@
      content: '';
      height: 120px;
      border-radius: 4px;
-     background-size: contain;
+     background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
      background-color: var(--gradient-background-color);
@@ -116,6 +121,7 @@
 
  .preferences-section__menu--itemed:nth-child(3)::before {
      background-image: url(../images/icons/Group3.svg);
+     
  }
 
  .preferences-section__menu--itemed:nth-child(4)::before {
