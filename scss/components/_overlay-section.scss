@@ -3,11 +3,26 @@
      padding-bottom: 94px;
 
 &__container {
-    padding: 0 15px;
-     width: 1200px;
-     margin-left: auto;
-     margin-right: auto;
- }
+
+        /*padding: 0 15px;*/
+        /*width: 1200px;*/
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width:480px) {
+            width: 480px;
+        }
+
+        @media screen and (min-width:768px) {
+            width: 768px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 1200px;
+        }
+    }
 
 &__buttons {
      display: flex;
@@ -16,6 +31,11 @@
      margin-bottom: 50px;
      padding-left: 15px;
      padding-right: 15px;
+
+     @media screen and (max-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+     }
  }
 
 &__button {
@@ -39,6 +59,25 @@
 &__button:not(:last-child) {
      margin-right: 8px;
  }
+
+ &__button{
+    @media screen and (max-width:676px){
+        margin-bottom: 15px;
+    }
+}
+
+&__button:nth-child(4){
+    @media screen and (max-width:676px) {
+            margin-bottom: 0;
+        }
+}
+
+&__button:nth-child(5) {
+    @media screen and (max-width:676px) {
+        margin-bottom: 0;
+    }
+}
+
  &__button:focus,
  &__button:hover {
      color: var(--minor-color);
