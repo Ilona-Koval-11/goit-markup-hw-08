@@ -4,8 +4,7 @@
 
      &__container {
     
-            /*padding: 0 15px;*/
-            /*width: 1200px;*/
+           
             padding-left: 15px;
             padding-right: 15px;
             margin-left: auto;
@@ -28,19 +27,21 @@
          list-style: none;
          font-weight: 500;
          
+  @media screen and (max-width:768px){
+            display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                 }
 
         @media screen and (min-width:768px) {
            display: flex; 
            flex-wrap: wrap;
            align-items: center;
            justify-content: center;
+          
          }
-        @media screen and (max-width:768px){
-            display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                 }
+      
          
      }
 
@@ -81,7 +82,7 @@
 
  .preferences-section__menu--itemed {
      margin-right: 30px;
-     width: 270px;
+     /*width: 270px;*/
      max-height: 224px;
      margin-bottom: 150px;
     
@@ -89,15 +90,34 @@
      text-align: center;
      padding-top: 20px;
      padding-bottom: 20px;
+    @media screen and (max-width: 479px) {
+            width: 100%;
+        }
+    
+        @media screen and (max-width: 767px) {
+            width: 450px;
+        }
+    
+        @media screen and (max-width:1199px) {
+            width: 354px;
+           
+        }
+    
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
+     
+     
 
-
-
-        
-       
 }
 
+
+
  .preferences-section__menu--itemed:last-child {
-     margin-right: 0;
+    @media screen and (min-width:1200px){
+       margin-right: 0; 
+    }
+     
  }
 
  .preferences-section__menu--itemed::before {
@@ -113,18 +133,78 @@
 
  .preferences-section__menu--itemed:nth-child(1)::before {
      background-image: url(../images/icons/Group1.svg);
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 767px) {
+            width: 450px;
+        }
+    @media screen  and (max-width:1199px) {
+            width: 354px;
+            margin-right: 30px;
+        }
+    @media screen and (min-width:1200px) {
+            width: 270px;
+        }
      
  }
 
  .preferences-section__menu--itemed:nth-child(2)::before {
      background-image: url(../images/icons/Group2.svg);
+    @media screen and (max-width: 479px) {
+            width: 100%;
+        }
+    
+        @media screen and (max-width: 767px) {
+            width: 450px;
+        }
+    
+        @media screen and (max-width:1199px) {
+            width: 354px;
+            margin-right: 30px;
+        }
+    
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
  }
 
  .preferences-section__menu--itemed:nth-child(3)::before {
      background-image: url(../images/icons/Group3.svg);
+    @media screen and (max-width: 479px) {
+            width: 100%;
+        }
+    
+        @media screen and (max-width: 767px) {
+            width: 450px;
+        }
+    
+        @media screen and (max-width:1199px) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
      
  }
 
  .preferences-section__menu--itemed:nth-child(4)::before {
      background-image: url(../images/icons/Group4.svg);
+     @media screen and (max-width: 479px) {
+      width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+      width: 450px;
+  }
+
+  @media screen and (max-width:1199px) {
+      width: 354px;
+  }
+
+  @media screen and (min-width:1200px) {
+      width: 270px;
+  }
  }
+  

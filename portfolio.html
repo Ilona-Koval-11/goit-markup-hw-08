@@ -15,18 +15,18 @@
 <header class="header">
     <div class="header__container ">
 
-        <nav class="header__nav header__desktop-menu">
+        <nav class="header__nav ">
             <a class="header__logo" href=""> <span class="header__logo--blue">Web</span><span
                     class="header__logo--black">Studio</span> </a>
-            <ul class="header__menu ">
+            <ul class="header__menu header__desktop-menu ">
 
-                <li class=" header__link   header__item">
-                    <div class=" header__item ">
+                <li class=" header__link   header__item  ">
+                    <div class="header__item ">
                         <a href="./index.html">Студія</a>
                     </div>
 
                 </li>
-                <li class="header__item">
+                <li class=" header__item">
                     <div class="header__item--current header__item--blue">
                         <a href="">Портфоліо</a>
                     </div>
@@ -63,14 +63,14 @@
         </div>
 
         <div class="header__mobile-menu--dropped">
-            <nav class="header__nav--buttoned">
+            <nav class="header__nav--buttoned is-hidden" data-mobile-menu>
                 <button type="button" class="header__button is-open" aria-expanded="false"
                     aria-controls="header__button--dropped-down-menu" data-menu-button>
                     <svg width="19" height="19" aria-label="перемикач мобільного меню">
                         <use class="header__button--iconed-cross"
-                            href="./images/icons/symbol-defs0108.svg#icon-close_24px"></use>
+                            href="./images/icons/symbol-defs0108.svg#icon-close_24px" data-mobile-menu-close></use>
                         <use class="header__button--iconed-open"
-                            href="./images/icons/symbol-defs0108.svg#icon-menu_24px"></use>
+                            href="./images/icons/symbol-defs0108.svg#icon-menu_24px" data-mobile-menu-open></use>
                     </svg>
 
                 </button>
@@ -81,13 +81,13 @@
 
                     <ul class="header__menu header__menu-mobile--dropped">
 
-                        <li class="   header__item header__item-mobile--dropped">
-                            <div class=" header__item ">
+                        <li class=" header__link   header__item  ">
+                            <div class="header__item ">
                                 <a href="./index.html">Студія</a>
                             </div>
-
+                        
                         </li>
-                        <li class="header__link   header__item header__item-mobile--dropped">
+                        <li class=" header__item">
                             <div class="header__item--current header__item--blue">
                                 <a href="">Портфоліо</a>
                             </div>
@@ -175,7 +175,7 @@ srcset="./images/tehnokryak/texnokryak-354.jpg 1x,
 ./images/tehnokryak/tehnokryak-450.jpg 1x,
 ./images/tehnokryak/texnokryak-900@2x.jpg 2x
 "
-src="./images/tehnokryak/texnokryak-354.jpg" alt="посилання на вебсайт" width="370">       
+src="./images/tehnokryak/texnokryak-354.jpg" alt="посилання на вебсайт" width="">       
 <div class="overlay-section__project--informed">
 <p class="overlay-section__project--announced">
 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпну інформацію про компанію чи фізособу.
@@ -202,7 +202,7 @@ srcset="./images/new-orlean/new-orlean-354.jpg 1x,
 ./images/new-orlean/new-orlean-450.jpg 1x,
 ./images/new-orlean/new-orlean-900@2x.jpg 2x
 "
-src="./images/new-orlean/new-orlean-354.jpg" alt="постер з футболістами" width="370">
+src="./images/new-orlean/new-orlean-354.jpg" alt="постер з футболістами" width="">
     <div class="overlay-section__project--informed">
         <p class="overlay-section__project--announced">
             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -229,7 +229,7 @@ src="./images/new-orlean/new-orlean-354.jpg" alt="постер з футболі
 ./images/seafood/seafood-450.jpg 1x,
 ./images/new-orlean/new-orlean-900@2x.jpg 2x
 "
-     src="./images/seafood/seafood-354.jpg" alt="Seafod" width="370">
+     src="./images/seafood/seafood-354.jpg" alt="Seafod" width="">
      <div class="overlay-section__project--informed">
         <p class="overlay-section__project--announced">
             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -256,7 +256,7 @@ src="./images/new-orlean/new-orlean-354.jpg" alt="постер з футболі
 ./images/prime/prime-450.jpg 1x,
 ./images/prime/prime-900@2x.jpg 2x
 "
-        src="./images/prime/prime-354.jpg" alt="headphones" width="370">
+        src="./images/prime/prime-354.jpg" alt="headphones" width="">
         <div class="overlay-section__project--informed">
         <p class="overlay-section__project--announced">
             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -283,7 +283,7 @@ src="./images/new-orlean/new-orlean-354.jpg" alt="постер з футболі
 ./images/boxes/boxes-450.jpg1x,
 ./images/boxes/boxes-900@2x.jpg 2x
 "
-        src="./images/boxes/boxes-354.jpg" alt="boxes" width="370">
+        src="./images/boxes/boxes-354.jpg" alt="boxes" width="">
        <div class="overlay-section__project--informed">
         <p class="overlay-section__project--announced">
             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -310,7 +310,7 @@ src="./images/new-orlean/new-orlean-354.jpg" alt="постер з футболі
 ./images/inspiration/inspiration-450.jpg 1x,
 ./images/inspiration/inspiration-900@2x.jpg 2x
 "
-        src="./images/inspiration/inspiration-354.jpg" alt="web-page" width="370">
+        src="./images/inspiration/inspiration-354.jpg" alt="web-page" width="">
         <div class="overlay-section__project--informed">
         <p class="overlay-section__project--announced">
             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -337,7 +337,7 @@ src="./images/new-orlean/new-orlean-354.jpg" alt="постер з футболі
 ./images/limited-edition/limited-edition-450.jpg 1x,
 ./images/limited-edition/limited-edition-900@2x.jpg 2x
 "
-        src="./images/limited-edition/limited-edition-354.jpg" alt="limited-edition" width="370">
+        src="./images/limited-edition/limited-edition-354.jpg" alt="limited-edition" width="">
     <div  class="overlay-section__project--informed">
         <p class="overlay-section__project--announced">
             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -364,7 +364,7 @@ src="./images/new-orlean/new-orlean-354.jpg" alt="постер з футболі
 ./images/lab/lab-450.jpg 1x,
 ./images/lab/lab-900@2x.jpg 2x
 "
-        src="./images/lab/lab-354.jpg" alt="lab" width="370">
+        src="./images/lab/lab-354.jpg" alt="lab" width="">
         <div class="overlay-section__project--informed">
         <p class="overlay-section__project--announced">
             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -391,7 +391,7 @@ src="./images/new-orlean/new-orlean-354.jpg" alt="постер з футболі
 ./images/business/business-450.jpg 1x,
 ./images/business/business-900@2x.jpg 2x
 "
-        src="./images/business/business-354.jpg" alt="growing-business" width="370">
+        src="./images/business/business-354.jpg" alt="growing-business" width="">
        <div class="overlay-section__project--informed">
         <p class="overlay-section__project--announced">
             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -516,6 +516,10 @@ src="./images/new-orlean/new-orlean-354.jpg" alt="постер з футболі
 
     </div>
 </footer>
+
+<script src="./js/mobile-menu.js"></script>
+
+<script src="./js/drop-menu.js"></script>
 
 </body>
 </html>

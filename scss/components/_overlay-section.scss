@@ -61,19 +61,19 @@
  }
 
  &__button{
-    @media screen and (max-width:676px){
+    @media screen and (max-width:767px){
         margin-bottom: 15px;
     }
 }
 
 &__button:nth-child(4){
-    @media screen and (max-width:676px) {
+    @media screen and (max-width:767px) {
             margin-bottom: 0;
         }
 }
 
 &__button:nth-child(5) {
-    @media screen and (max-width:676px) {
+    @media screen and (max-width:767px) {
         margin-bottom: 0;
     }
 }

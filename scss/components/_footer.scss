@@ -311,8 +311,18 @@ placeholder{
 }
 .footer__container--left-tablet{
   @media (min-width:768px) and (max-width:1199px) {
-    align-items: center;
+    display: flex;
+    align-items: baseline;
+    
   }  
+}
+
+li.footer__item{
+    @media (min-width:768px) and (max-width:1199px){
+    display: flex;
+        align-items: flex-start;
+        margin-left: 0;
+    }
 }
 
 .footer__container--right-tablet {
