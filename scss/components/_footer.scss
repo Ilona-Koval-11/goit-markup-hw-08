@@ -37,6 +37,7 @@
      font-size: 14px;
      line-height: 1.7;
      margin-top: 20px;
+   
  }
 
  &__item {
@@ -304,7 +305,8 @@ placeholder{
     @media (min-width:768px) and (max-width:1199px){
      display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
+    justify-content: space-between;
      
     }
 
@@ -312,7 +314,8 @@ placeholder{
 .footer__container--left-tablet{
   @media (min-width:768px) and (max-width:1199px) {
     display: flex;
-    align-items: baseline;
+  
+ 
     
   }  
 }
